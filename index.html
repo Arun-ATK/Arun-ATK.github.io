@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oral Cancer And Hygiene</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Spartan&display=swap');
+            *{box-sizing: border-box;}
+
+            body{
+                margin: 0;
+            }
+            a{
+                color: #dddddd;
+                text-decoration: none;
+            }
+
+            .main-heading, .sub-def{
+                color: #17252a;
+            }
+            .img-right{
+                float: right;
+                padding: 20px;
+            }
+            .fab{
+                padding: 1px 5px;
+            }
+            .foot-links{
+                text-decoration: underline;
+            }
+
+            #title-slogan{
+                position: relative;
+                display: flex;
+                height: 150px;
+                background-image: linear-gradient(to bottom right, #3aafa9, #5fc8c4);
+                color: #feffff;
+                font-family: "Spartan", sans-serif;
+                justify-content: center;
+                align-items: center;
+            }
+            #title{
+                padding-left: 20px;
+            }
+            #slogan{
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                margin: 0;
+                padding-left: 20px;
+                color: #17252a;
+            }
+            #top-outernav{
+                -webkit-position: sticky;
+                position: sticky;
+                margin: 0;
+                top: 0;
+                z-index: 1;
+                box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+            }
+            #nav-bar{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                color: #dddddd;
+                background-color: #17252a;
+                background-image: linear-gradient(to bottom right, #17252a, #293438);
+                font-family: "Roboto", sans-serif;
+            }
+            #nav-bar > a{
+                display: block;
+                padding: 14px;
+                background-color: transparent;
+                transition: 0.15s;
+            }            
+            #nav-bar > a:hover{
+                background-color: #2b7a78;
+            }
+            #hamburger{
+                position: absolute;
+                left: 0;
+                font-size: 14px;
+            }
+            #main-container{
+                display:flex;
+                font-family: "Open sans", sans-serif;
+            }
+            #sidebar{
+                padding-top: 10px;
+                background-image: linear-gradient(to bottom right, #2b7a78, #48918e);
+                font-family: "Roboto", sans-serif;
+                transition: 0.15s;
+            }
+            #links{
+                -webkit-position: sticky;
+                position: sticky;
+                top:55px;
+            }
+            #links > a {
+                display: block;
+                text-align: center;
+                padding: 10px 30px;
+                transition: 0.15s;
+            }
+            #links > a:hover{
+                background-color: #17252a;
+            }
+
+            #info{
+                padding: 10px 30px 30px 30px; 
+                background-color: #def2f1;
+            }
+            #contact-us a{
+                color: #2b7a78;
+            }
+            #footer{
+                clear: both;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 50px;
+                background-image: linear-gradient(to bottom right, #17252a, #293438);
+                color: #def2f1;
+                font-family: "Spartan", sans-serif;
+                font-size: 13px;
+            }
+            #browser-support{
+                bottom: 5px;
+                font-size: 10px;
+            }
+
+            @media screen and (max-width: 650px){
+                .img-right{
+                    float: none;
+                    display: block;
+                    width: 100%;
+                }
+                #sidebar {
+                display: none;
+                }
+            }
+            @media screen and (min-width: 650px){
+                #sidebar{
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="title-slogan">
+            <div id="title">
+                <h1>Oral Cancer and Hygiene</h1>
+            </div>
+
+            <h5 id="slogan">An awareness on the nescessities of maintaining proper oral hygiene</h5>
+        </div>
+
+        <nav id="top-outernav">
+            <div id="nav-bar">
+                <a href="javascript:sideNavOC()" id="hamburger">&#9776;</a>
+                <a href="#title-slogan">Home</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+
+        <div id="main-container">
+            <div id="sidebar">
+                <nav id="links">
+                    <a href="#cancer-def">What is Cancer?</a>
+                    <a href="#mouth-part">Parts of Mouth</a>
+                    <a href="#tumor-types">Types of Tumour</a>
+                    <a href="#hygiene-rel">Oral Hygiene and Cancer</a>
+                    <a href="#causes-inf">Causes for Dental Infection</a>
+                    <a href="#maintain-h">Ways to Maintain Oral Hygiene</a>
+                </nav>
+            </div>
+
+            <div id="main-content">
+                <div id="info">
+                    <h2 class="main-heading" id="cancer-def">What is Cancer?</h2>
+                    <p class="definition">
+                        Cancer starts when cells in the body start to grow out of control. Cells in nearly any part of the body can become cancer and can spread to other parts of the body.<br>
+
+                        Oral cancer, as the name suggests, is cancer that starts in the oral cavity. To understand how these cancers occur and how maintaining a proper hygiene can prevent these from happening, it is first important to know the different parts of the mouth or the oral cavity.<br>
+                    </p>
+
+                    <hr>
+
+                    <h2 class="main-heading" id="mouth-part" >Parts of the Mouth (Oral Cavity)</h2>
+                    <img src="mouth.jpg" alt="Labeled image of the mouth" class="img-right" width=40%>
+                    <p class="definition">
+                        The oral cavity includes the lips, the cheeks, the teeth, the gums, the front two-thirds of the tongue, the floor of the mouth beneath the tongue, and the roof of the mouth.
+                    </p>
+
+                    <h2 class="main-heading" id="tumor-types">Tumours and Growths in the Oral Cavity</h2>
+                    <p class="definition">
+                        Many types of tumours (abnormal pile of cells) can develop in the oral cavity. These growths can be classified into 3 main types: <br>
+                        <ul id="tumour-types">
+                            <li>Benign Growths</li>
+                            <li>Pre-cancerous Growths</li>
+                            <li>Cancer</li>
+                        </ul>
+                        <h3 class="sub-def">Benign Growths</h3>
+                        These tumours are not cancerous. They do not invade other tissues and do not spread to other parts of the body. These non-cancerous tumours can be caused due to various reasons. They are generally harmless, but in some cases, it could cause a few problems (very rarely are they life-threatening). The general treatment for this is to surgically remove them, since they are very unlikely to recur.<br>
+                        <h3 class="sub-def">Pre-cancerous Growths</h3>
+                        Pre-cancerous tumours involve abnormal cells that have an increased risk of turning into a cancer.
+                        Identification at an early stage can highly reduce the risks from the tumour cells turning cancerous. Treatment includes surgery and chemotherapy.
+                        <h3 class="sub-def">Cancer</h3>
+                        More than 90% of the cancers in the oral cavity are called squamous cells. These cells are flat scale-like cells that form the lining of the mouth and throat. If left untreated these cells could spread into the deeper layers of the oral cavity. This could pose serious health risks to the patient.
+                    </p>
+                    <h2 class="main-heading" id="hygiene-rel">How is Oral Hygiene Related to Cancer?</h2>
+                    <p class="definition">
+                        Poor Oral hygiene is strongly associated with oral cancer, since it aids the carcinogenic potential of the other known carcinogens such as tobacco and alcohol.<br>
+                        It is highly recommended to maintain a proper oral hygiene since not only does it prevent cancer, it also prevents various other diseases from affecting our body.<br>
+                        Oral hygiene is just not restricted to brushing twice a day but also visiting a dentist at least twice a year.<br>
+                        <img src="tooth.jpg" width="20%" alt="Tooth With Cavity Clipart" class="img-right"></a>
+                        Poor oral hygiene not only causes cancer, but can also cause cavities. Similar to cancer cells, cavities spread to the nearby cells and can cause further complications.
+                        <h3 class="sub-def">Effects of Cavity</h3>
+                        <ul>
+                            <li>Heart attack and stroke</li>
+                            <li>Pneumonia</li>
+                            <li>Diabetes</li>
+                            <li>Osteoporosis</li>
+                        </ul>
+                    </p>
+                    <h2 class="main-heading" id="causes-inf">Causes for Dental Infections</h2>
+                    <p class="definition">
+                        Sucrose (table sugar) is commonly associated with cavities. Limiting sugar-containing food and drinks is one way to reduce the risk of developing a cavity.<br>
+                        Acidic drinks such as soft drinks lower the pH level of the oral cavity which causes demineralization of enamel and increases the risk of dental cavities.
+                    </p>
+                    <h2 class="main-definition" id="maintain-h">Ways to Maintain Oral Hygiene</h2>
+                    <p class="main-definition">
+                        <ul>
+                            <li>Brush teeth twice a day</li>
+                            <li>Floss regularly</li>
+                            <li>Avoid snacking</li>
+                            <li>Change toothbrush every three months</li>
+                            <li>Quit smoking</li>
+                            <li>Visit dentist regularly</li>
+                        </ul>
+                    </p>
+
+                    <hr>
+
+                    <h3 id="contact">Contact Us</h3>
+                    <p id="contact-us">
+                        If you require further information email us at <a href="mailto:csau.new@gmail.com">csau.new@gmail.com</a> or contact us at +91 94453 XXXXX.
+                    </p>
+
+                    <p id="about">
+                        <h3 id="about-author">About the author</h3>
+                        Arun TK is a first-year student at Anna University pursuing a Bachelor's degree in the field of computer science.
+                    </p>
+                </div>
+
+                <div id="footer">
+                    <p>This webpage was created for the recruitment conducted by CSAU.</p>
+                    <p>
+                        <i class='fab fa-facebook-square'></i><a href="https://www.facebook.com/csau.ceg/" target="_blank" class="foot-links">Facebook</a> |
+                        <a href="https://csau.in/" target="_blank" class="foot-links">Website</a>
+                    </p>
+                    <br>
+
+                    <span id="browser-support">Note: Best viewed in Mozilla Firefox, Google Chrome and Microsoft Edge</span>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var side = document.getElementById("sidebar");
+            var sidestyle = getComputedStyle(side);
+            var sidedisp = sidestyle.getPropertyValue('display')
+
+            var collapse = (sidedisp == "none")? true: false;
+
+            function sideNavOC(){
+                if(collapse == true) {
+                    collapse = false;
+                    side.style.display = "block";
+                }
+                else {
+                    collapse = true;
+                    side.style.display = "none";
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
