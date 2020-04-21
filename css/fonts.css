@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "Open Sans";
+    src: 
+        url(../Fonts/OpenSans-Regular.ttf)
+        format('truetype');
+}
+
+@font-face{
+    font-family: "Oswald";
+    src: 
+        url(../Fonts/Oswald-Regular.ttf)
+        format('truetype');
+}
