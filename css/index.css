@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -132,6 +133,13 @@ main #all-sites .site-container:hover .site-caption{
     background-color: #feda6aaa;
 }
 
+@supports (-ms-ime-align:auto) {
+    main #all-sites .site-container:hover .site-caption {
+        height: 100%;
+        background-color: rgba(254,218,106,0.66)
+    }
+}
+
 main #all-sites .site-container:hover .site-caption .site-extra{
     opacity: 1;
     display: block;
@@ -146,6 +154,15 @@ footer {
     background-color: #1d1e22;
     color: #d4d4dc;
     font-family: "Open Sans", sans-serif;
+}
+
+footer #foot-notes {
+    display: flex;
+    flex-flow: column  nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    text-align: center;
 }
 
 body {
